@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="STYLE.css" />
+  </head>
+
+  <style>
+    .vid {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      filter: blur(10px);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100vh;
+      background-color: transparent;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 100vh;
+
+      /* padding: 100px 90px 100px 90px; */
+    }
+
+    .content {
+      /* justify-content: center; */
+      max-width: 60%;
+      color: white;
+    }
+
+    .image {
+      max-width: 35%;
+    }
+
+    .image img {
+      /* width: 100%;
+      height: auto; */
+      width: 300px;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 30px;
+    }
+
+    .role {
+      font-size: 2rem;
+      color: #03045e;
+    }
+
+    .role span {
+      font-weight: bold;
+      color: #00b3cc;
+    }
+
+    .title {
+      margin-bottom: 10px;
+      color: #03045e;
+      font-size: 50px;
+      font-weight: bold;
+    }
+
+    .name {
+      font-size: 80px;
+      font-weight: bold;
+      color: #03045e;
+      /* text-shadow: #03045e; */
+      text-decoration: solid #03045e;
+    }
+
+    .description {
+      color: #03045e;
+      margin-bottom: 20px;
+      font-size: large;
+      font-weight: bold;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: left;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .social-icons a {
+      color: #03045e;
+      font-size: 3.4em;
+      text-decoration: none;
+    }
+
+    .download-btn {
+      background-color: #00b3cc;
+      color: #1a1a2e;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .download-btn:hover {
+      background-color: #00b3cc;
+    }
+
+    @media (max-width: 500px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .content,
+      .image {
+        max-width: 100%;
+      }
+
+      .role {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .role {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+  <body>
+    <header>
+      <a href="#" class="logo">My Library</a>
+
+      <nav>
+        <a href="index.html" class="active"> Home</a>
+        <a href="College.html">College Day</a>
+        <a href="Video.html">Video</a>
+      </nav>
+    </header>
+    <video class="vid" autoplay muted loop class="background-video">
+      <source src="opening.mp4" type="video/mp4" />
+    </video>
+
+    <div class="container">
+      <div class="content">
+        <p class="title">Hello, It's Me</p>
+        <h1 class="name">Arneli Baclado</h1>
+        <p class="role">And I'm a <span>Student</span></p>
+        <p class="description">
+          A student in an IT course typically focuses on learning about computer
+          systems, software development, networking, and cybersecurity. They
+          gain hands-on experience with programming, databases, and
+          troubleshooting technical issues, aiming to build skills in
+          problem-solving, coding, and understanding IT infrastructure.
+        </p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="image">
+        <img src="pic4.jpg" alt="Description of image" />
+      </div>
+    </div>
+    <!-- <div class="container">
+        <p class="title">Hello, It's Me</p>
+        <h1 class="name">Arneli Baclado</h1>
+        <p class="role">And I'm a <span>Student</span></p>
+        <p class="description">A student in an IT course typically focuses on learning about computer systems, software development, networking, and cybersecurity. 
+                                They gain hands-on experience with programming, databases,
+                                and troubleshooting technical issues, aiming to build skills in problem-solving, coding, and understanding IT infrastructure.</p>
+        
+        <div class="social-icons">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+        </div>
+        
+    </div> -->
+  </body>
+</html>

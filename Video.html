@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="STYLE.css">
+    <title>Document</title>
+</head>
+
+<style>
+    .vid{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+        
+
+    }
+    /* section{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 50px;
+    } */
+    .vid {
+        filter: blur(10px);
+    }
+
+    .bidyow{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-color: red;
+        border-radius: 10px;	
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bidyow video{
+        width: 900;
+        height: 700;
+    }
+
+
+    </style>
+<body>
+    <header>
+        <a href="#" class="logo">My Library</a>
+
+        <nav>
+            <a href="index.html" class="active"> Home</a>
+            <a href="College.html" >College Day</a>
+            <a href="Video.html" >Video</a>
+        </nav>
+    </header>
+    <div>
+        <video class="vid" autoplay muted loop class="background-video">
+            <source src="opening.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="bidyow">
+        <video width="1200" height="700" controls>
+            <source src="bg.mp4" type="video/mp4">
+        </video>
+    </div>
+</body>
+</html>
